@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+
+html, body{
+
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* ===================================================================================================================== */
+/*                                                HEADER SECTION                                                         */
+/* ======================================================================================================================*/
+
+header{
+    background-color: rgba(0,0,0,0.5);  /* SET BACKGROUND COLOR OF WHOLE SECTION */
+    display: flex;                        /* HORIZONTALLY ALIGN ALL CHILDREN ELEMENTS */
+    padding: 10px 20px;                   /* SET SPACE BETWEEN ELEMENTS AND BORDER INSIDE THE HEADER BAR 10 PX FROM TOP/BOTTOM AND 20PX LEFT/RIGHT */
+    justify-content: space-between;       /* ADD SPACE-BETWEEN CHILDREN ELEMENTS */
+    align-items: center;                  /* VERTICALLY CENTRE THE CHILDREN ELEMENTS */
+    color: #fff;                        /* SET THE FONT COLOR TO WHITE */
+    border-radius: 0px;                  /* SET BORDER RADIUS*/
+    font-size: 15px;                      /* SET THE FONT SIZE OF THE TEXT */
+
+    position: sticky;
+    top: 0;
+
+}
+
+header p{                                
+    display: flex;                        /* HORIZONTALLY ALIGN CHILDREN ELEMENTS OF <p> */
+    align-items: center;                  /* VERTICALLY ALIGN THE CHILDREN ELEMENT OF <p> */
+    font-size: 26;
+    font-weight: 700;
+}
+
+.menu a{
+    text-decoration: none;                /* REMOVE THE UNDERLINE BELOW THE LINKS */
+    margin: 15px;                         /* ADD SPACE BETWEEN THE ELEMENTS */
+    color: #fff;                        /* SET THE COLOR */
+}
+
+.menu a:hover{
+    background-color: rgb(41, 100, 100);
+    border-radius: 25px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.login{
+    border-bottom: 2px solid black;
+}
+
+
+
+/* ==================================================================================================================== */
+/*                                               BACKGROUND-IMAGE                                                       */
+/* ==================================================================================================================== */
+
+.cover-page{
+    background-image: linear-gradient(rgba(0,0,0,0.5)),url(images/map.jpg);
+    height: 65vh;
+    background-position: center center;
+}
+
+.covpage-content{             /* CONTENT WRITTEN ON COVER PAGE */
+    
+    position: relative;    /* 90 and ml=500 */
+    top: 90px;
+    left: 500px;
+    
+    
+}
+
+.covpage-heading{              /* HEADING */
+    color: yellow;
+}
+
+.covpage-description{         /* HEADING-DESCRIPTION */
+    font-size: 20px;
+    color: paleturquoise;
+}
+
+.button-container{           /* CONTAINER OF ALL BUTTONS */
+    display: flex;
+    gap: 15px;
+}
+
+.btn-search-missing-person, .btn-report-missing-person{
+padding: 5px;
+color: #fff;
+border-radius: 25px;
+
+}
+
+.btn-search-missing-person{
+    background: darkblue;
+}
+
+.btn-report-missing-person:hover{
+    background: rgba(0,0,0,0.5);
+}
+
+.btn-report-missing-person{
+    background: red;
+}
+
+
+.btn-search-missing-person:hover{
+    background: rgba(0,0,0,0.5);
+}
+
+
+
+/* ===================================================================================================================== */
+/*                                                     QUICK SEARCH SECTION                                              */ 
+/* ===================================================================================================================== */
+
+.quick-search{            /* APPLY PADDING ON QUICK SEARCH SECTION */
+    padding: 10px 40px;
+    background: lightslategray;
+    
+
+}
+
+.options-section{
+    padding: 20px;
+    margin: 5px;
+
+}
+
+legend{                   /* ALTER THE TEXT COLOR OF ALL LEGENDS TO BE BLUE */
+    color: paleturquoise;
+    font-weight: bold;
+}
+
+/*                         SELECTED OPTIONS                 */
+.name-select{
+    width: 250px;
+}
+
+.age-select{
+    width: 140px;
+}
+
+.location-select{
+    width: 200px;
+}
+
+.btn-search{
+    width: 250px;
+    color: #fff;
+    background-color: blue;
+    
+}
+
+.btn-search:hover{
+
+    border: 1px solid hsl(0, 0%, 20%);
+
+}
+
+.name-select, .age-select, .location-select, .btn-search{  /* ALTER THE HEIGHT FOR ALL SELECT OPTIONS */
+    height: 25px;
+}
+
+
+
+/* ===================================================================================================================== */
+/*                                                    RECENT CASES SECTION                                               */
+/* ===================================================================================================================== */
+
+.recent-cases{            /* recent cases container*/
+    
+    font-weight: bold;
+    margin-left: 130px;
+    margin-right: 150px;
+
+}
+
+.recent-cases-heading{
+
+    color: red;
+}
+
+
+.gallery{
+    margin: 4px;
+    display: inline-block;
+    border: 1px solid hsl(0, 0%, 60%);
+    
+}
+
+
+.gallery:hover{
+    border: 1px solid hsl(0, 0%, 20%);
+}
+
+
+.gallery .description{
+    
+    padding: 10px;
+
+}
+
+
+.gallery img{
+
+    width: 250px;
+    height: 200px;
+}
+
+
+.missing{                       /* MISSING PERSON SECTION*/
+    
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 5px;
+
+}
+
+
+.still-missing{               /* STILL MISSING PERSON SECTION */
+
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 5px;
+
+}
+
+
+.report-sighting{             /* REPORT SIGHTING PERSON*/
+
+    background-color: lightgreen;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    
+}
+
+
+.found{                       /* FOUND PERSON SECTION */
+
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    
+}
+
+
+
+/* ===================================================================================================================== */
+/*                                                   INTERACTIVE MAP SECTION                                             */
+/* ===================================================================================================================== */
+
+.interactive-map{
+
+    padding: 10px 20px;
+    background: lightslategray;
+    
+}
+
+
+
+.map-image{
+
+    width: 800px;
+    margin: 10px;
+    float: left;
+    margin-right: 20px;
+}
+
+.map-image:hover{
+
+    border: 1px solid hsl(0, 0%, 20%);
+}
+
+aside{
+
+    margin-left: 850px;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid black;
+    text-align: center;
+
+}
+
+aside p{
+
+    margin: 20px;
+    color: blue;
+}
+
+.report-now{
+
+    width: 150px;
+    background: blue;
+    color: white;
+    width: 400px;
+    height: 30px;
+
+}
+
+.report-now:hover{
+
+    border: 1px solid hsl(0, 0%, 20%);
+}
+
+
+/* ===================================================================================================================== */
+/*                                                   SAFETY TIPS                                                         */
+/* ===================================================================================================================== */
+
+.how-to-help, .support-resources, .safety-tips{
+    
+    display: inline-block;
+    border: 1px solid lightblue;
+    padding: 10px;
+    margin: 0px;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    
+}
+
+
+.how-to-help{
+
+    margin-left: 25px;
+    width: 300px;
+    
+}
+
+
+
+/* ===================================================================================================================== */
+/*                                                     FOOTER SECTION                                                    */
+/* ===================================================================================================================== */
+
+footer{
+    background-color: rgba(0,0,0,0.5);
+    position: sticky;
+    bottom: 0;
+    text-align: center;
+    border-radius: 25px;
+    color: white;
+}
+
+/* Designed and developed by Theo'sTech Solutions THANK YOU! */
+
+/* A high number of people were getting abducted daily especially the youth and students therefore thats where the idea
+   of Search and Find came from. Bridging the gap between famallies who have been victimized and help support.  
+*/

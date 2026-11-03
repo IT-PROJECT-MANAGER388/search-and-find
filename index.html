@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search and Find</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="Author" content="Theo" />
+</head>
+
+<body>
+
+    <main id="home">
+
+        <header>
+
+            <p>
+                <a class="logo">
+
+                    <img src="images/logo.png" alt="Logo" width="30px" height="20px">
+
+                </a>
+
+                <em>Search and Find</em>
+            </p>
+
+            <!-- NAVIGATION BAR -->
+
+            <nav class="menu">
+                
+                <a href="#home">Home</a>
+                <a href="#search">Search</a>
+                <a href="#report">Report Missing Person</a>
+                <a href="#resources">Resources</a>
+                <a href="#">Contact</a>
+                <a href="#" class="login">Login</a>
+                
+            </nav>
+
+        </header>
+
+        <!-- ============================================== COVER-PAGE ================================================ -->
+
+        <div class="cover-page">
+
+            <!-- COVER PAGE CONTENT -->
+
+            <section class="covpage-content">
+
+                <h1 class="covpage-heading">Help Find the Missing</h1><br>
+
+                <p class="covpage-description">
+                    Connecting Families World wide.
+                </p><br>
+
+                <p class="button-container">
+
+                    <button class="btn-search-missing-person">Search Missing Persons</button>
+                    <button class="btn-report-missing-person">Report a Missing Person</button>
+
+                </p>
+
+            </section>
+
+        </div>
+
+        <!-- ==================================== QUICK SEARCH SECTION ================================================ -->
+
+        <section class="quick-search" id="search">
+
+            <fieldset>
+
+                <legend><strong>Quick Search</strong></legend>
+
+               <p class="options-section">
+
+                 <!-- NAME OPTION -->
+
+                 <select class="name-select">
+
+                    <option>Name</option>
+                    <option>Theo Magana</option>
+                    <option>Haqieem Jalieel</option>
+                    <option>Oceana Smith</option>
+                    <option>John Weizenbaum</option>
+
+                </select>
+
+                <!-- AGE OPTION -->
+
+                <select class="age-select">
+
+                    <option>Age</option>
+                    <option>21</option>
+                    <option>24</option>
+                    <option>18</option>
+                    <option>20</option>
+
+                </select>
+
+                <!-- LOCATION OPTION -->
+
+                <select class="location-select">
+
+                    <option>Location</option>
+                    <option>Gauteng</option>
+                    <option>Western Cape</option>
+                    <option>KwaZulu-Natal</option>
+                    <option>Eastern Cape</option>
+                    <option>Limpopo</option>
+                    <option>Mpumalanga</option>
+                    <option>North West</option>
+                    <option>Free State</option>
+                    <option>Nothern Cape</option>
+                    
+                </select>
+
+                <button class="btn-search">Search</button>
+
+               </p>
+
+            </fieldset>
+
+        </section><br>
+
+        <!-- ==================================== RECENT CASES SECTION ================================================ -->
+
+        <section class="recent-cases">
+
+            <fieldset>
+
+                <legend class="recent-cases-heading">Recent Cases</legend><br>
+
+                <!-- CASE_1 -->
+
+                <div class="gallery">
+
+                    <a target="_blank" href="images/Theo Magana.jpg">
+
+                        <img src="images/Theo Magana.jpg" alt="Theodore missing" width="250px">
+
+                    </a>
+
+                    <div class="description">
+
+                        Theo Magana<br> 
+                        Age: 21<br> 
+                        Last seen: Durban<br>
+
+                        <div class="missing">Missing</div>
+                    
+                    </div>
+
+                </div>
+
+                <!-- CASE_2 -->
+
+                <div class="gallery">
+
+                    <a target="_blank" href="images/img_1.jpg">
+
+                        <img src="images/img_1.jpg" alt="Theodore missing" width="250px">
+
+                    </a>
+
+                    <div class="description">
+                        
+                        Haqieem Jalieel<br> 
+                        Age: 24<br> 
+                        Last seen: Cape Town<br>
+
+                        <div class="still-missing">Still missing</div>
+                    
+                    </div>
+
+                </div>
+
+                <!-- CASE_3 -->
+
+                <div class="gallery">
+
+                    <a target="_blank" href="images/img_2.jpg">
+
+                        <img src="images/img_2.jpg" alt="Theodore missing" width="250px">
+
+                    </a>
+
+                    <div class="description">
+                        
+                        Oceana Smith<br> 
+                        Age: 18<br> 
+                        Last seen: Pretoria<br>
+
+                        <div class="report-sighting">Report Sighting</div>
+                    
+                    </div>
+
+                </div>
+
+                <!-- CASE_4 -->
+
+                <div class="gallery">
+
+                    <a target="_blank" href="images/img_3.jpg">
+
+                        <img src="images/img_3.jpg" alt="Theodore missing" width="250px">
+
+                    </a>
+
+                    <div class="description">
+                        
+                        John Weizenbaum<br>
+                        Age: 20<br>
+                        Last seen: Johannesburg<br>
+
+                        <div class="found">Found</div>
+                    
+                    </div>
+
+                </div>
+
+
+            </fieldset>
+
+        </section><br>
+
+        <!-- ============================================ INTERACTIVE MAP SECTION ==================================== -->
+
+        <section class="interactive-map" id="report">
+
+            <fieldset>
+
+                <legend>Interactive Map</legend>
+
+                <!-- MAP IMAGE -->
+
+                <div class="map">
+
+                    <a href="https://www.google.com/maps/@-26.171498,27.9576222,12z?entry=ttu&g_ep=EgoyMDI2MDkyNy4xIKXMDSoASAFQAw%3D%3D">
+
+                        <img src="images/map.jpg" class="map-image">
+
+                    </a>
+                </div>
+
+                <aside>
+
+                    <h3>Report a Missing Person</h3>
+
+                    <p>
+
+                        Submit a Missing Person Report<br> to Help US Find Them.
+
+                    </p>
+
+                    <button type="submit" class="report-now">Report Now</button>
+
+                </aside>
+
+            </fieldset>
+
+        </section><br>
+
+        <div class="how-to-help">
+
+            <img src="images/briefcase.png" width="50px" height="30px">
+            
+            <h3>How to Help</h3>
+
+            <p>
+                Learn what to do if<br>
+                someone goes missing.
+            </p>
+
+        </div>
+
+        <div class="support-resources" id="resources">
+
+            <img src="images/first-aid-kit.png" width="50px" height="30px">
+
+            <h3>Support Resources</h3>
+
+            <p>
+                Find links to NGOs<br>
+                and hotlines.
+            </p>
+
+        </div>
+
+        <div class="safety-tips">
+
+            <img src="images/safety-tips.png" width="50px" height="30px">
+
+            <h3>Safety Tips</h3>
+
+            <p>
+                
+                Stay informed with<br>
+                precauionary advice.
+            </p>
+
+        </div>
+
+
+
+    </main><br>
+
+    <footer>
+
+        <p>
+
+            <small>&copy;2026 Search and Find. All rights reserved.</small>
+
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
